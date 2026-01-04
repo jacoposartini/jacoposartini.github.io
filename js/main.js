@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const rotatingTextElement = document.getElementById('rotating-text');
     const phrases = [
-        "Aiuto aziende e startup a scalare\nprodotti digitali",
-        "Progetto architetture software\nsolide e manutenibili",
-        "Trasformo idee complesse\nin soluzioni performanti",
-        "Costruisco backend robusti\ncon visione strategica",
-        "Ottimizzo sistemi esistenti\nper massima efficienza"
+        "Aiuto aziende e startup a scalare prodotti digitali",
+        "Progetto architetture software solide e manutenibili",
+        "Trasformo idee complesse in soluzioni performanti",
+        "Costruisco backend robusti con visione strategica",
+        "Ottimizzo sistemi esistenti per massima efficienza"
     ];
     let currentPhraseIndex = 0;
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             // Update text
             currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-            rotatingTextElement.innerHTML = phrases[currentPhraseIndex].replace('\n', '<br>');
+            rotatingTextElement.innerHTML = phrases[currentPhraseIndex];
 
             // Fade in
             rotatingTextElement.classList.remove('fade-out');
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize first phrase
     if (rotatingTextElement) {
-        rotatingTextElement.innerHTML = phrases[0].replace('\n', '<br>');
+        rotatingTextElement.innerHTML = phrases[0];
         // Start rotation every 4 seconds
         setInterval(updateRotatingText, 4000);
     }

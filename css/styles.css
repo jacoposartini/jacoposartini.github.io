@@ -47,6 +47,12 @@
     --shadow-glow: 0 8px 30px -8px rgba(0, 220, 130, 0.25);
     /* Cyber Mint glow */
 
+    /* Glass Effect Tokens */
+    --glass-bg: rgba(15, 23, 42, 0.4);
+    --glass-border: 0px solid rgba(255, 255, 255, 0.06);
+    --glass-blur: blur(16px);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
     /* Spacing */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -216,13 +222,22 @@ strong {
 .navbar {
     position: fixed;
     top: 1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* Replaces transform: translateX(-50%) to avoid containing block issue */
     width: fit-content;
     min-width: 300px;
     max-width: 90%;
     z-index: 1000;
     padding: 0.75rem 2rem;
+    transition: all var(--transition-base);
+}
+
+.navbar-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
     background: rgba(15, 23, 42, 0.6);
     /* More transparent */
     backdrop-filter: blur(16px);
@@ -234,11 +249,14 @@ strong {
 }
 
 .navbar.scrolled {
+    top: 1rem;
+    padding: 0.6rem 2rem;
+}
+
+.navbar.scrolled .navbar-bg {
     background: rgba(11, 17, 32, 0.95);
     /* Matches bg-primary/Dark Navy */
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    top: 1rem;
-    padding: 0.6rem 2rem;
     border-color: rgba(255, 255, 255, 0.12);
 }
 
@@ -477,9 +495,14 @@ strong {
     font-size: 1.125rem;
     color: var(--text-secondary);
     margin-bottom: var(--space-xl);
-    line-height: 1.8;
-    min-height: 3.6em;
-    /* Reserve space for two lines */
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hide mobile logo by default on desktop */
+.nav-item-mobile-logo {
+    display: none;
 }
 
 /* Rotating Text Animation */
@@ -719,9 +742,9 @@ strong {
 }
 
 .expertise-card {
-    background: var(--bg-card);
+    background: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--border-subtle);
+    border: var(--glass-border);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
     /* Inner border */
     border-radius: var(--radius-lg);
@@ -729,11 +752,7 @@ strong {
     transition: all var(--transition-base);
 }
 
-.expertise-card:hover {
-    background: var(--bg-card-hover);
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-glow);
-}
+
 
 .card-icon {
     width: 64px;
@@ -822,9 +841,9 @@ strong {
 }
 
 .timeline-content {
-    background: var(--bg-card);
+    background: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--border-subtle);
+    border: var(--glass-border);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
     /* Inner border */
     border-radius: var(--radius-lg);
@@ -832,11 +851,7 @@ strong {
     transition: all var(--transition-base);
 }
 
-.timeline-content:hover {
-    background: var(--bg-card-hover);
-    transform: translateX(6px);
-    box-shadow: var(--shadow-glow);
-}
+
 
 .timeline-header {
     display: flex;
@@ -911,8 +926,8 @@ strong {
     gap: var(--space-sm);
     color: var(--text-secondary);
     padding: var(--space-sm) var(--space-md);
-    background: var(--bg-card);
-    border: 1px solid var(--border-subtle);
+    background: var(--glass-bg);
+    border: var(--glass-border);
     border-radius: var(--radius-full);
     transition: all var(--transition-base);
     font-size: 0.9rem;
@@ -937,9 +952,9 @@ strong {
 }
 
 .contact-card {
-    background: var(--bg-card);
+    background: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--border-subtle);
+    border: var(--glass-border);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
@@ -963,10 +978,12 @@ strong {
    ========================================== */
 .footer {
     position: relative;
-    background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: var(--glass-border);
+    border-radius: var(--radius-xl);
+    margin: 0 var(--space-md) var(--space-md);
     padding: var(--space-2xl) 0 var(--space-lg);
     z-index: 10;
 }
@@ -999,8 +1016,8 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-card);
-    border: 1px solid var(--border-subtle);
+    background: var(--glass-bg);
+    border: var(--glass-border);
     border-radius: var(--radius-sm);
     color: var(--text-secondary);
     transition: all var(--transition-base);
@@ -1130,25 +1147,39 @@ strong {
         right: 0;
         bottom: 0;
         width: 100%;
-        height: 100vh;
-        background: rgba(2, 6, 23, 0.98);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        height: 100%;
+        background: var(--bg-primary);
+        /* Solid background, no glass */
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: var(--space-xl);
         opacity: 0;
         visibility: hidden;
-        transform: scale(0.95);
-        transition: all var(--transition-base);
+        transition: opacity var(--transition-base);
         z-index: 999;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .nav-menu.active {
         opacity: 1;
         visibility: visible;
-        transform: scale(1);
+    }
+
+    /* Mobile Logo Styling */
+    .nav-item-mobile-logo {
+        display: block;
+        margin-bottom: var(--space-lg);
+    }
+
+    .nav-logo-mobile {
+        font-size: 2.5rem;
+        font-weight: var(--font-weight-bold);
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .nav-link {

@@ -1,0 +1,24 @@
+# Jacopo Sartini - Software Architect & Backend Developer
+
+## Core Profile
+I am Jacopo Sartini, a freelance Software Architect and Backend Developer based in Milan, Italy. I specialize in designing and building scalable, robust digital products for enterprises and startups. My expertise lies in high-complexity technical solutions, covering the entire software lifecycle from architectural design to deployment and monitoring.
+
+## Key Skills AND Technologies
+- **Languages**: Python (Expert), JavaScript.
+- **Frameworks**: Django (Expert), Django REST Framework (DRF), FastAPI, Celery.
+- **Architecture**: Software Architecture, System Design, Microservices, Event-Driven Architecture.
+- **Infrastructure & DevOps**: Docker, AWS, Google Cloud Platform (GCP), CI/CD Pipelines.
+- **AI & Data**: AI Agents, LLM Integration (MCP compatible), Data Engineering, ETL Pipelines.
+
+## Professional Experience
+- **Software Architect & Backend Developer (Freelance)** (2022 - Present): Working with enterprise clients (e.g., Sony Italia, Coop Italia, Regione Calabria) on custom high-complexity solutions.
+- **Backend Developer at Tech4All** (2021 - 2022): Developed "Reasy" (EdTech for dyslexia) using Django, OCR, and ML.
+- **CTO & Full Stack Developer at Estro Technologies** (2020 - 2022): Developed "Maestro" (neurodevelopmental rehabilitation) using Django, React Native, and AR.
+
+## Contact Information
+- **Email**: jacopo.sartini.developer@gmail.com
+- **Phone**: +39 353 474 0393
+- **Booking**: [Prenota una Call](https://calendar.app.google/NJTLBX2VokRayY3e7)
+- **LinkedIn**: [linkedin.com/in/jacoposartini](https://www.linkedin.com/in/jacoposartini)
+- **GitHub**: [github.com/jacoposartini](https://github.com/jacoposartini)
+- **Website**: https://jacoposartini.github.io
