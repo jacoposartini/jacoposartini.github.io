@@ -1,258 +1,357 @@
 <!DOCTYPE html>
-<html class="sr">
-
+<html lang="it">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Jacopo Sartini - Sviluppatore Backend</title>
-    <meta property="og:title" content="Jacopo Sartini | Back End Developer">
-    <meta property="og:description" content="Progetto, sviluppo e metto in produzione servizi e applicazioni backend.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Jacopo Sartini - Software Architect & Backend Developer</title>
+    <meta name="description" content="Software Architect & Backend Developer freelance specializzato in Django/Python. Aiuto aziende e startup a scalare prodotti digitali con architetture solide e visione strategica.">
+    <meta name="keywords" content="software architect, backend developer, django, python, freelance, milano, architetture software, cloud, devops, ai, ml">
+    <meta name="author" content="Jacopo Sartini">
+    
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jacoposartini.github.io/">
-    <meta property="og:site_name" content="Jacopo Sartini">
+    <meta property="og:title" content="Jacopo Sartini - Software Architect & Backend Developer">
+    <meta property="og:description" content="Aiuto aziende e startup a scalare prodotti digitali con architetture solide e visione strategica.">
     <meta property="og:locale" content="it_IT">
-    <meta name="description" content="Progetto, sviluppo e metto in produzione servizi e applicazioni backend.">
-    <meta name="keywords" content="development, applications, development, python, django, italy, jacopo sartini">
-
-    <meta itemprop="name" content="Jacopo Sartini | Back End Developer">
-    <meta itemprop="description" content="Progetto, sviluppo e metto in produzione servizi e applicazioni backend.">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="https://jacoposartini.github.io/">
-    <meta name="twitter:title" content="Jacopo Sartini | Back End Developer">
-    <meta name="twitter:description" content="Progetto, sviluppo e metto in produzione servizi e applicazioni backend.">
-    <link rel="stylesheet" href="./static/main.css" hreflang="en-us">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jacopo Sartini - Software Architect & Backend Developer">
+    <meta name="twitter:description" content="Aiuto aziende e startup a scalare prodotti digitali con architetture solide e visione strategica.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">JS</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">Chi Sono</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#experience" class="nav-link">Esperienza</a></li>
+                <li><a href="#contact" class="nav-link cta-nav">Contattami</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<body style="height: 100%;" class="night">
-    <div id="site">
-        <header class="intro" id="top">
-            <h1 style="margin-bottom: 0;"><span style="font-size: 5rem; ">Jacopo Sartini</span>
-                <br><span class="intro__tagline">Sviluppatore Backend Freelancer</span>
-            </h1>
-
-            <h2 class="intro__tagline">Progetto, sviluppo e porto in produzione servizi web e applicazioni backend</h2>
-
-            <h3 class="intro__contact"> <span>Contattami </span> <span class="emoji pointer"></span> <span> <a
-                        href="mailto:jacopo.sartini.developer@gmail.com" target="_blank"
-                        class="highlight-link">jacopo.sartini.developer@gmail.com</a> </span> </h3>
-
-            <h3 class="intro__contact"><a href="index.en.html">🇬🇧 Looking for the English website?</a></h3>
-        </header>
-
-
-        <!--header class="intro">
-            <h1 class="intro__hello">Ciao!</h1>
-            <h2 class="intro__tagline">Sono <span class="name">Jacopo Sartini</span>, sviluppatore backend
-                con 5 anni di esperienza in startup innovative e come freelancer, occupandomi della progettazione e
-                dello
-                sviluppo di API REST, microservizi, sistemi asincroni, calcolo distribuito e soluzioni cloud.
-                <span class="emoji technologist"></span>
-            </h2>
-            <h3 class="intro__contact"> <span>Contattami </span> <span class="emoji pointer"></span> <span> <a
-                        href="mailto:jacopo.sartini.developer@gmail.com" target="_blank"
-                        class="highlight-link">jacopo.sartini.developer@gmail.com</a> </span> </h3>
-        </header-->
-
-        <section class="section background" data-sr-id="0"
-            style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
-            <div class="section__title">Su di me</div>
-            <div class="section__content">
-                <p>
-                    Sono uno Sviluppatore Backend con 5 anni di esperienza in
-                    startup innovative e come freelancer, occupandomi della
-                    progettazione e dello sviluppo di API REST, microservizi,
-                    sistemi asincroni, calcolo distribuito e soluzioni cloud.
-                </p>
-                <p>Attualmente <b>lavoro come freelancer</b> e <b>studio Informatica</b> presso
-                    <b>UniGe</b>.
-                </p>
-                <p><b>In breve tempo posso sviluppare e mettere in produzione il backend di cui hai bisogno.</b></p>
-                <a class="status" href="mailto:jacopo.sartini.developer@gmail.com" target="_blank">
-                    <div class="status__light">
-                        <div class="status__light__ring"></div>
-                        <div class="status__light__led"></div>
-                    </div>
-                    <div class="status__message">Sono disponibile per sviluppare nuovi progetti</div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-image-wrapper fade-in">
+                <img src="static/profile.png" alt="Jacopo Sartini" class="hero-image">
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span>Disponibile per nuovi progetti</span>
+                </div>
+            </div>
+            <h1 class="hero-title fade-in">Jacopo Sartini</h1>
+            <p class="hero-subtitle fade-in">Software Architect & Backend Developer</p>
+            <div class="hero-tagline fade-in">
+                <span class="rotating-text" id="rotating-text"></span>
+            </div>
+            <div class="hero-cta fade-in">
+                <a href="https://calendar.app.google/NJTLBX2VokRayY3e7" target="_blank" class="btn-primary">
+                    <span>Prenota una Call</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-
+                <a href="#contact" class="btn-secondary">Scopri di più</a>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
 
-
-        <section class="section skills" data-sr-id="2"
-            style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
-            <div class="section__title">Competenze</div>
-            <div class="section__content">
-                <div class="skillz">
-                    <div class="skillz__category">
-                        <div class="skillz__category__label">Linguaggi</div>
-                        <ul>
-                            <li class="skillz__category__item">Python</li>
-                            <li class="skillz__category__item">JavaScript</li>
-                            <li class="skillz__category__item">SQL</li>
-                            <li class="skillz__category__item">Bash</li>
-                            <li class="skillz__category__item">C++</li>
-                            <li class="skillz__category__item">Java</li>
-                        </ul>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-wrapper fade-in">
+                <div class="about-header">
+                    <span class="section-label">Chi Sono</span>
+                    <h2 class="about-title">Dalla Visione all'Architettura.<br><span class="highlight">Dal Codice alla Produzione.</span></h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">
+                            Sono un <strong>Freelance Software Architect & Backend Developer</strong>, specializzato in Python/Django. 
+                            Trasformo requisiti complessi in sistemi scalabili, robusti e manutenibili.
+                        </p>
+                        <p>
+                            Con <strong>6+ anni di esperienza</strong>, gestisco l'intero ciclo di vita del software: 
+                            dall'analisi architetturale allo sviluppo, dal deploy al monitoring. 
+                            Collaboro con aziende enterprise e startup per realizzare soluzioni ad alta complessità tecnica.
+                        </p>
+                        <p>
+                            Appassionato di Musica, presso l'<strong>Università degli Studi di Milano</strong> sto approfondendo 
+                            l'Informatica Musicale: elaborazione numerica dei segnali e AI applicata al suono.
+                        </p>
                     </div>
-                    <div class="skillz__category">
-                        <div class="skillz__category__label">Frameworks</div>
-                        <ul>
-                            <li class="skillz__category__item">Django</li>
-                            <li class="skillz__category__item">Django Rest Framework</li>
-                            <li class="skillz__category__item">Celery</li>
-                            <li class="skillz__category__item">FastAPI</li>
-                            <li class="skillz__category__item">Flask</li>
-                            <li class="skillz__category__item">Express.js</li>
-                        </ul>
-                    </div>
-
-                    <div class="skillz__category">
-                        <div class="skillz__category__label">Strumenti</div>
-                        <ul>
-                            <li class="skillz__category__item">Linux (Debian, Arch & Alpine)</li>
-                            <li class="skillz__category__item">Docker & Docker Compose</li>
-                            <li class="skillz__category__item">Git e Piattaforme Git (Gitlab, Github)</li>
-                            <li class="skillz__category__item">RDBMS (PostgreSQL, MySQL & MariaDB)</li>
-                            <li class="skillz__category__item">NoSQL (MongoDB, Redis & InfluxDB)</li>
-                            <li class="skillz__category__item">Amazon Web Services Ecosystem</li>
-                            <li class="skillz__category__item">Google Cloud Platform</li>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section experience other-projects" data-sr-id="3"
-            style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
-            <div class="section__title">Esperienze</div>
-            <div class="section__content">
-                <div class="jobs">
-                    <div class="job">
-                        <div class="time-place">
-                            <div class="job__company"> <a>Freelancer</a> </div>
-                            <div class="job__time">2023 - ADESSO</div>
-                        </div>
-                        <div class="job__position">Backend Developer</div>
-                        <br>
-                        <p>
-                            Progettazione e sviluppo di applicazioni Backend e microservizi Python e JavaScript.
-                            Conteinerizzazione e ottimizzazione di servizi per il cloud.
-                            Integrazione di AI all'interno di progetti preesistenti.
-                            Consulenze per progettazione di applicazioni e web security.
-                        </p>
-                        <div class="project__used">
-                            <span class="project__used__item">Python</span>
-                            <span class="project__used__item">Django</span>
-                            <span class="project__used__item">DRF</span>
-                            <span class="project__used__item">Django Ninja</span>
-                            <span class="project__used__item">FastAPI</span>
-                            <span class="project__used__item">Flask</span>
-                            <span class="project__used__item">Celery</span>
-                            <span class="project__used__item">Linux</span>
-                            <span class="project__used__item">Docker</span>
-                        </div>
+    <!-- Expertise Section -->
+    <section id="expertise" class="section expertise">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Aree di specializzazione</h2>
+            </div>
+            <div class="expertise-grid">
+                <!-- Card 1: Python & Django -->
+                <div class="expertise-card fade-in">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-
-
-                    <div class="job">
-                        <div class="time-place">
-                            <div class="job__company"> <a href="https://tech4all.ai" target="_blank">Tech 4
-                                    All</a> </div>
-                            <div class="job__time">2021 - 2022</div>
-                        </div>
-                        <div class="job__position">Backend Developer</div>
-                        <br>
-                        <p>
-                            Progettazione e sviluppo backend di Reasy, applicazione per supportare studenti con
-                            dislessia nel loro percorso di apprendimento.
-                            Estrazione del testo da documenti caricati tramite OCR.
-                            Utilizzo di algoritmi di Machine Learning per generazione di mappe concettuali, riassunti e
-                            sintesi vocale.
-                        </p>
-                        <div class="project__used">
-                            <span class="project__used__item">Python</span>
-                            <span class="project__used__item">Django</span>
-                            <span class="project__used__item">DRF</span>
-                            <span class="project__used__item">Celery</span>
-                            <span class="project__used__item">Tesseract OCR</span>
-                            <span class="project__used__item">spaCy</span>
-                            <span class="project__used__item">AWS</span>
-                            <span class="project__used__item">Docker</span>
-                        </div>
+                    <h3>Python & Django Seniority</h3>
+                    <p>6+ anni di esperienza in Python. Specialista Django, DRF e FastAPI per la creazione di API RESTful scalabili, sicure e performanti.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>DRF</span>
+                        <span>FastAPI</span>
+                        <span>Celery</span>
                     </div>
-
-                    <div class="job">
-                        <div class="time-place">
-                            <div class="job__company"> <a href="https://estro.ai" target="_blank">Estro
-                                    Technologies</a> </div>
-                            <div class="job__time">2019 - 2022</div>
-                        </div>
-                        <div class="job__position">CTO & Full-Stack Developer</div>
-                        <br>
-                        <p>
-                            Progettazione e sviluppo di Maestro, applicazione riabilitativa rivolta a soggetti con
-                            disturbi del neurosviluppo. Frontend sperimentale in Realtà Aumentata.
-                            Utilizzo di algoritmi di Machine Learning per il riconoscimento delle immagini.
-                            Collezione e analisi statistica dei dati.
-                        </p>
-                        <div class="project__used">
-                            <span class="project__used__item">Python</span>
-                            <span class="project__used__item">Django</span>
-                            <span class="project__used__item">DRF</span>
-                            <span class="project__used__item">Celery</span>
-                            <span class="project__used__item">JavaScript</span>
-                            <span class="project__used__item">React Native</span>
-                            <span class="project__used__item">Viro (AR Framework)</span>
-                            <span class="project__used__item">Google Cloud Services</span>
-                            <span class="project__used__item">AWS</span>
-                            <span class="project__used__item">Docker</span>
-                        </div>
-                    </div>
-
                 </div>
 
-                <a href="./static/JacopoSartiniCV.pdf" target="_blank" class="arrow-link">Visualizza il mio
-                    CV</a>
+                <!-- Card 2: Software Architecture -->
+                <div class="expertise-card fade-in">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 3V21" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Software Architecture</h3>
+                    <p>Progettazione di sistemi complessi, scalabili e manutenibili. Infrastrutture Cloud (AWS, GCP), containerizzazione Docker e pipeline CI/CD.</p>
+                    <div class="tech-tags">
+                        <span>System Design</span>
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>CI/CD</span>
+                        <span>Microservizi</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Data & AI Engineering -->
+                <div class="expertise-card fade-in">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4.93 4.93L7.76 7.76" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16.24 16.24L19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 12H6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Data & AI Engineering</h3>
+                    <p>Sviluppo di Agenti AI e integrazione LLM (MCP compatible). Data Engineering, pipeline ETL, analisi dati e soluzioni predittive.</p>
+                    <div class="tech-tags">
+                        <span>AI Agents</span>
+                        <span>LLM/MCP</span>
+                        <span>ETL</span>
+                        <span>Data Pipelines</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Esperienza</span>
+                <h2 class="section-title">Il mio percorso professionale</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Architect & Backend Developer</h3>
+                                <p class="company">Freelance</p>
+                            </div>
+                            <span class="period">2022 - Presente</span>
+                        </div>
+                        <p class="description">
+                            Ho iniziato nel 2022 come <strong>Backend Developer</strong>, evolvendomi dal 2024 nel ruolo di <strong>Software Architect</strong>. 
+                            Gestisco l'intero ciclo di vita del software: dall'analisi e progettazione architetturale, allo sviluppo, deploy e monitoring. 
+                            Collaboro con clienti enterprise (Sony Italia, Coop Italia, Regione Calabria) per realizzare soluzioni su misura ad alta complessità tecnica.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Backend Developer</h3>
+                                <p class="company">Tech4All</p>
+                            </div>
+                            <span class="period">2021 - 2022</span>
+                        </div>
+                        <p class="description">
+                            Progettazione di Reasy, applicazione per supportare studenti con dislessia nel loro percorso di apprendimento. 
+                            Implementazione del Backend con Django, DRF e Celery. Estrazione del testo da documenti caricati tramite OCR. 
+                            Utilizzo di algoritmi di Machine Learning per generazione di mappe concettuali, riassunti e sintesi vocale.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>Celery</span>
+                            <span>OCR</span>
+                            <span>ML</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>CTO & Full Stack Developer</h3>
+                                <p class="company">Estro Technologies</p>
+                            </div>
+                            <span class="period">2020 - 2022</span>
+                        </div>
+                        <p class="description">
+                            Progettazione di Maestro, applicazione riabilitativa rivolta a soggetti con disturbi del neurosviluppo. 
+                            Implementazione del Backend con Django, DRF e Celery. Frontend sperimentale in Realtà Aumentata. 
+                            Utilizzo di algoritmi di Machine Learning per il riconoscimento delle immagini. Collezione e analisi statistica dei dati.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Django</span>
+                            <span>React Native</span>
+                            <span>AR</span>
+                            <span>ML</span>
+                            <span>GCP</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <div class="footer__copyright">
-                <div class="footer__links">
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text fade-in">
+                    <span class="section-label">Contatti</span>
+                    <h2 class="section-title">Lavoriamo insieme</h2>
+                    <p class="lead">
+                        Sono disponibile per progetti di consulenza e sviluppo a tutti i livelli. 
+                        Prenota una call conoscitiva o contattami direttamente.
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:jacopo.sartini.developer@gmail.com" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>jacopo.sartini.developer@gmail.com</span>
+                        </a>
+                        <a href="tel:+393534740393" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 16.92V19.92C22 20.42 21.56 20.86 21.07 20.86C9.61 19.86 2 12.25 2 3.93C2 3.44 2.44 3 2.93 3H5.93C6.43 3 6.87 3.44 6.87 3.93C6.87 5.93 7.27 7.83 8.02 9.57C8.12 9.81 8.06 10.09 7.86 10.29L6.1 12.05C7.93 15.72 11.28 19.07 14.95 20.9L16.71 19.14C16.91 18.94 17.19 18.88 17.43 18.98C19.17 19.73 21.07 20.13 23.07 20.13C23.56 20.86 23.5 21.43 22 16.92Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>+39 353 474 0393</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta-wrapper fade-in">
+                    <div class="contact-card">
+                        <h3>Prenota una Call Conoscitiva</h3>
+                        <p>Discutiamo del tuo progetto e vediamo come posso aiutarti a raggiungere i tuoi obiettivi.</p>
+                        <a href="https://calendar.app.google/NJTLBX2VokRayY3e7" target="_blank" class="btn-primary">
+                            <span>Prenota Ora</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <a href="#top" title="torna in cima"> <span class="text">Torna in cima</span>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Jacopo Sartini</h3>
+                    <p>Software Architect & Backend Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/jacoposartini" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/jacoposartini" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:jacopo.sartini.developer@gmail.com" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke-width="2"/>
+                            <path d="M22 6L12 13L2 6" stroke-width="2"/>
+                        </svg>
                     </a>
                 </div>
             </div>
-            <div class="footer__links">
-                <a href="mailto:jacopo.sartini.developer@gmail.com" target="_blank" title="email"> <span
-                        class="text">email</span> <img src="./static/email.svg" alt="email">
-                </a>
-
-                <a href="https://it.fiverr.com/jacoposartini" target="_blank" title="fiverr"> <span
-                        class="text">fiverr</span> <img src="./static/fiverr.svg" alt="linkedin">
-                </a>
-
-                <a href="https://github.com/jacoposartini/" target="_blank" title="email"> <span
-                        class="text">github</span> <img src="./static/github.svg" alt="github">
-                </a>
-
-
-                <a href="https://www.linkedin.com/in/jacopo-sartini-dev" target="_blank" title="linkedin"> <span
-                        class="text">linkedin</span> <img src="./static/linkedin.svg" alt="linkedin">
-                </a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jacopo Sartini. Tutti i diritti riservati.</p>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-
-    </div>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
-
 </html>
